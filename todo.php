@@ -9,7 +9,7 @@ $todo = json_decode($string, true);
 
 $new_task = isset($_POST['todo']) ? $_POST['todo'] : null;
 $new_items = [
-    "todo" => "$new_task",
+    "text" => "$new_task",
     "done" => "false",
 ];
 if ($new_task !== null) {
