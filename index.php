@@ -18,6 +18,11 @@
         <div class="container">
             <h1>{{ message }}</h1>
         </div>
+        <div class="container">
+            <ul class="list-group">
+                <li v-for="(item,index) in todos" :key="item" class="list-group-item">{{item.text}}</li>
+            </ul>
+        </div>
     </div>
     <script src="./app.js"></script>
 </body>
