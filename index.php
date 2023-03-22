@@ -23,7 +23,7 @@
                 <div class="col">
                     <input @keyup.enter="addItem" v-model="newTodo" type="text" placeholder="Scrivi nella lista " class="mb-3 form-control" name="todo" aria-label="default input example">
                     <ul class="list-group">
-                        <li v-for="(item,index) in todos" :key="item" class="list-group-item">{{item}}</li>
+                        <li v-for="(item,index) in todos" :key="item" class="list-group-item">{{item.text}}</li>
                     </ul>
                 </div>
             </div>
